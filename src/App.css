@@ -17,7 +17,7 @@ header img {
 }
 
 .container {
-  border: black solid 2px;
+  /* border: black solid 2px; */
   height: 350px;
   width: 1024px;
   margin: 0 auto;
@@ -26,10 +26,11 @@ header img {
 }
 
 section {
-  border: red solid 1px;
+  /* border: red solid 1px; */
   display: flex;
   gap: 30px;
   padding: 30px;
+  flex: 1;
 }
 section > div {
   display: flex;
@@ -55,12 +56,18 @@ button {
   color: white;
 }
 
-/* .col2 .isInactive {
-  background-color: white;
-  color: #5c48d3;
+.green {
+  background-color: green;
+  color: white;
 }
 
-.col2 .isActive {
-  background-color: #5c48d3;
+.red {
+  background-color: red;
   color: white;
-} */
+}
+
+.go {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

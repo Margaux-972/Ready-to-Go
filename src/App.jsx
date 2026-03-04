@@ -21,7 +21,7 @@ function App() {
             <div className="col1">
               <button
                 onClick={() => {
-                  switch1 ? setSwitch1(false) : setSwitch1(true);
+                  setSwitch1(true);
                 }}
                 className={switch1 ? "isActive" : "isInactive"}
               >
@@ -29,7 +29,7 @@ function App() {
               </button>
               <button
                 onClick={() => {
-                  switch2 ? setSwitch2(false) : setSwitch2(true);
+                  setSwitch2(true);
                 }}
                 className={switch2 ? "isActive" : "isInactive"}
               >
@@ -37,7 +37,7 @@ function App() {
               </button>
               <button
                 onClick={() => {
-                  switch3 ? setSwitch3(false) : setSwitch3(true);
+                  setSwitch3(true);
                 }}
                 className={switch3 ? "isActive" : "isInactive"}
               >
@@ -47,17 +47,17 @@ function App() {
             <div className="col2">
               <button
                 onClick={() => {
-                  switch1 ? setSwitch1(false) : setSwitch1(true);
+                  setSwitch1(false);
                 }}
-                className={switch1 ? "isActive" : "isInactive"}
+                className={switch1 ? "isInactive" : "isActive"}
               >
                 OFF
               </button>
               <button
                 onClick={() => {
-                  switch2 ? setSwitch2(false) : setSwitch2(true);
+                  setSwitch2(false);
                 }}
-                className={switch2 ? "isActive" : "isInactive"}
+                className={switch2 ? "isInactive" : "isActive"}
               >
                 OFF
               </button>
@@ -65,13 +65,21 @@ function App() {
                 onClick={() => {
                   switch3 ? setSwitch3(false) : setSwitch3(true);
                 }}
-                className={switch3 ? "isActive" : "isInactive"}
+                className={switch3 ? "isInactive" : "isActive"}
               >
                 OFF
               </button>
             </div>
           </section>
-          <section></section>
+          <section className="go">
+            {switch1 && switch2 && switch3 ? (
+              <button className="green">
+                <p>Go !</p>
+              </button>
+            ) : (
+              <button className="red">No way !</button>
+            )}
+          </section>
         </div>
       </main>
     </>

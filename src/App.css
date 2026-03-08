@@ -39,11 +39,10 @@ section > div {
 }
 button {
   border: solid 1px #908f8f;
-  /* background-color: white;
-  color: #5c48d3; */
   height: 70px;
   width: 85px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .isInactive {
@@ -70,4 +69,24 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+main {
+  min-height: 100vh - 160px;
+}
+
+footer {
+  height: 80px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
